@@ -1,0 +1,8 @@
+.top№1_anime{
+    margin: 20px 80px;
+    height: 500px;
+    background-image: url(../img/darling_in_the_franxx.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}

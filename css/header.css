@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: rgb(30, 30, 30);
+}
+.nav_menu{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.nav_menu1{
+    display: flex;
+    align-items: center;
+}
+header ul, a{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+header ul li{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+header ul li:hover{
+    background-color: rgb(18, 18, 18);
+}
+.logo_img{
+    width: 80px;
+    margin-left: 80px;
+}
