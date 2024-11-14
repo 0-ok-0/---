@@ -77,11 +77,12 @@
     gap: 10px;
 }
 .anime{
-    /* border: 1px solid white; */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
 }
 .anime1{
     background-image: url(../img/Dandadan.jpg);
@@ -94,4 +95,40 @@
 }
 .anime4{
     background-image: url(../img/Tensei_Kizoku.jfif);
+}
+.anime5{
+    background-image: url(../img/Re_Zero.webp);
+}
+.anime6{
+    background-image: url(../img/Seirei-Gensouki-Season-2.webp);
+}
+.anime div{
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.anime1:hover #anime11{
+    display: block;
+}
+.anime2:hover #anime22{
+    display: block;
+}
+.anime3:hover #anime33{
+    display: block;
+}
+.anime4:hover #anime44{
+    display: block;
+}
+.anime5:hover #anime55{
+    display: block;
+}
+.anime6:hover #anime66{
+    display: block;
+}
+.anime a{
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
 }
