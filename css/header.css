@@ -25,14 +25,46 @@ body{
     width: 100%;
 }
 #button_nav_menu{
-    background-image: url(../img/menu-icon.png);
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    background-position: center;
+    /* background-image: url(../img/menu-icon.png); */
+    width: 24px;
+    height: 24px;
     background-color: rgb(0, 0, 0);
     border: none;
     margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#menu_icon{
+    width: 24px;
+    height: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 20px);
+    grid-template-rows: repeat(3, 6px);
+}
+#menu_icon div{
+    background-color: rgb(151, 151, 151);
+    margin-top: 2px;
+    border-radius: 2px;
+}
+#close_nav_menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#close_nav_menu div{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+.close_nav_menu2{
+    rotate: -45deg;
+}
+.close_nav_menu1{
+    rotate: 45deg;
 }
 #nav_menu_phone{
     display: none;
