@@ -120,6 +120,10 @@
 @media (min-width: 900px) {
     .top№1_anime{
         background-image: url(../img/darling_in_the_franxx.jpg);
+        margin: 20px 50px;
+    }
+    .new_reliz{
+        margin: 50px;
     }
     .new_reliz1{
         margin-top: 20px;
