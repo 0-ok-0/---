@@ -1,4 +1,170 @@
 .top№1_anime{
+    margin: 20px 15px;
+    height: 500px;
+    background-image: url(../img/darling_in_the_franxx_phone.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    border-radius: 10px;
+}
+.top№1_anime::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+.top№1_anime .content{
+    position: relative;
+    z-index: 2;
+    padding-left: 30px;
+    width: 60%;
+}
+.top№1_anime .content p{
+    color: rgb(167, 167, 167);
+}
+.top№1_anime .content .reliz{
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+}
+.top№1_anime .content .janr{
+    display: flex;
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.top№1_anime .content .janr li{
+    color: rgb(167, 167, 167);
+}
+.top№1_anime .content .li1{
+    list-style-type: none;
+}
+.top№1_anime .content .li2{
+    margin-left: 30px;
+}
+.top№1_smotr{
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.new_reliz{
+    margin: 50px 15px;
+}
+.new_reliz1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+}
+.anime{
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.anime::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+.anime1{
+    background-image: url(../img/Dandadan.jpg);
+}
+.anime2{
+    background-image: url(../img/MF_Ghost_2nd_Season.webp);
+}
+.anime3{
+    background-image: url(../img/Hitoribocchi.jpg);
+}
+.anime4{
+    background-image: url(../img/Tensei_Kizoku.jfif);
+}
+.anime5{
+    background-image: url(../img/Re_Zero.webp);
+}
+.anime6{
+    background-image: url(../img/Seirei-Gensouki-Season-2.webp);
+}
+
+@media (min-width: 500px){
+    .new_reliz1{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 400px);
+    }
+}
+
+@media (min-width: 900px) {
+    .top№1_anime{
+        background-image: url(../img/darling_in_the_franxx.jpg);
+    }
+    .new_reliz1{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 400px);
+        gap: 10px;
+    }
+    .anime::before{
+        display: none;
+    }
+    
+    .anime1:hover #anime11{
+        display: block;
+    }
+    .anime2:hover #anime22{
+        display: block;
+    }
+    .anime3:hover #anime33{
+        display: block;
+    }
+    .anime4:hover #anime44{
+        display: block;
+    }
+    .anime5:hover #anime55{
+        display: block;
+    }
+    .anime6:hover #anime66{
+        display: block;
+    }
+    .anime div{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow-wrap: break-word;
+    }
+}
+
+
+
+
+
+/* .top№1_anime{
     position: relative;
     margin: 20px 80px;
     height: 400px;
@@ -73,7 +239,7 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, 400px);
     gap: 10px;
 }
 .anime{
@@ -103,11 +269,12 @@
     background-image: url(../img/Seirei-Gensouki-Season-2.webp);
 }
 .anime div{
-    position: absolute;
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow-wrap: break-word;
 }
 .anime1:hover #anime11{
     display: block;
@@ -126,9 +293,28 @@
 }
 .anime6:hover #anime66{
     display: block;
+} */
+/* .anime button{
+    margin:  30px auto;
+    display: flex;
+    font-size: 20px;
+    background-color: initial;
+    border: none;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 15px;
 }
-.anime a{
-    margin: 20px auto;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.15);
+.anime button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
 }
+.anime h2{
+    text-align: center;
+    margin: 80px 0;
+}
+.anime ul{
+    display: flex;
+}
+.anime ul li{
+    margin-right: 20px;
+    overflow-wrap: break-word;
+} */

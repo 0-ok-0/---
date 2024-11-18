@@ -6,6 +6,100 @@ body{
     background-color: rgb(30, 30, 30);
 }
 .nav_menu{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo_img{
+    width: 65px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.nav_menu_desctop{
+    display: none;
+}
+.nav_menu_phone{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+#button_nav_menu{
+    background-image: url(../img/menu-icon.png);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    margin-right: 15px;
+}
+#nav_menu_phone{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+header ul{
+    list-style-type: none;
+    left: 0;
+    padding: 0;
+}
+header ul li{
+    padding: 20px 0;
+    margin: 5px 15px;
+}
+header ul a{
+    text-decoration: none;
+}
+@media (min-width: 1000px) {
+    .nav_menu_phone{
+        display: none;
+    }
+    .nav_menu_desctop{
+        display: flex;
+    }
+    header ul{
+        display: flex;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;   
+    }
+    header ul li{
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0 5px;
+        transition: 0.3s;
+    }
+    header ul li:hover{
+        background-color: rgb(18, 18, 18);
+    }
+    .nav_menu{
+        height: 90px;
+    }
+    .logo_img{
+        width: 80px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .nav_menu{
     height: 90px;
     background-color: black;
     display: flex;
@@ -15,10 +109,12 @@ body{
     display: flex;
     align-items: center;
 }
-header ul, a{
+header ul{
     display: flex;
     list-style-type: none;
-    text-decoration: none;
+}
+a{
+    text-decoration: none;   
 }
 header ul li{
     padding: 10px;
@@ -29,8 +125,4 @@ header ul li{
 header ul li:hover{
     background-color: rgb(18, 18, 18);
 }
-.logo_img{
-    width: 80px;
-    margin-left: 80px;
-    cursor: pointer;
-}
+ */

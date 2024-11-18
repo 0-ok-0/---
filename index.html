@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/instyle.css">
 </head>
 <body>
-    <script src="script/hoverAnime.js"></script>
+    <script src="script/nav_menu.js"></script>
     <header>
         <div class="nav_menu">
-            <div class="nav_menu1">
-                <div class="logo">
-                    <img src="img/logo.png" alt="" class="logo_img">
-                </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="" class="logo_img">
+            </div>
+            <div class="nav_menu_desctop">    
                 <ul>
                     <li><a href="#">Топ аниме</a></li>
                     <li><a href="#">Релизы</a></li>
@@ -22,7 +22,17 @@
                     <li><a href="#">Поддержать проект</a></li>
                 </ul>
             </div>
-            <div class="nav_menu2"></div>
+            <div class="nav_menu_phone">
+                <button id="button_nav_menu" onclick="prpr()"></button>
+                <div id="nav_menu_phone">    
+                    <ul>
+                        <li><a href="#">Топ аниме</a></li>
+                        <li><a href="#">Релизы</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Поддержать проект</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -48,8 +58,8 @@
             <p style="color: rgb(167, 167, 167);">Самые новые эпизоды в любимой озвучке</p>
             <div class="new_reliz1">
                 <div class="anime1 anime" id="anime1">
-                    <div id="anime11">
-                        <a href="#">6 серия</a>
+                     <div id="anime11">
+                        <!--<button>7 серия</button>
                         <h2>Дандадан</h2>
                         <ul>
                             <li class="li1" style="list-style-type: none;">Осень</li>
@@ -62,8 +72,8 @@
                             <li class="li2">Комедия</li>
                             <li class="li2">Фантастика</li>
                             <li class="li2">Сверхъестественное</li>
-                        </ul>
-                    </div>        
+                        </ul>  -->
+                    </div>       
                 </div>
                 <div class="anime2 anime" id="anime2">
                     <div id="anime22">
