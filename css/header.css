@@ -91,6 +91,53 @@ header ul a{
 .liHeader{
     color: red;
 }
+.logo_img_index{
+    background-color: rgba(43, 43, 43, .35);
+    border-radius: 10px;
+}
+.pRU{
+    margin-top: 25px;
+    font-size: 12px;
+}
+.footerMenu{
+    height: auto;
+    background-color: rgb(48, 48, 48);
+    padding: 30px 15px 25px 15px;
+}
+.footerInfo{
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(1, 1fr);
+}
+.footerLogoInfo{
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    padding: 0 0 15px 0;
+
+}
+footer a{
+    text-decoration: none;
+}
+footer p{
+    color: gray;
+}
+.footerImg{
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.522);
+    border-radius: 10px;
+}
+.footerFeedback{
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+.footerURL{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+
+
 @media (min-width: 900px) {
     .nav_menu_phone{
         display: none;
@@ -127,6 +174,14 @@ header ul a{
         width: 80px;
         margin-left: 50px;
         cursor: pointer;
+        border-radius: 10px;
+        transition: .3s;
+    }
+    .logo_img:hover{
+        background-color: rgb(18, 18, 18);
+    }
+    .logo_img_index:hover{
+        background-color: rgba(43, 43, 43, .35);
     }
 }
 
