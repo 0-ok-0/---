@@ -130,10 +130,13 @@ footer p{
     padding-top: 20px;
     border-top: 1px solid black;
 }
+.footerFeedback p{
+    font-size: 12px;
+}
 .footerURL{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+
 }
 
 
