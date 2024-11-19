@@ -75,8 +75,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
+    overflow:hidden;
     position: relative;
 }
 .anime::before{
@@ -108,6 +107,63 @@
 .anime6{
     background-image: url(../img/Seirei-Gensouki-Season-2.webp);
 }
+.seria{
+    margin:  30px auto;
+    font-size: 20px;
+    border: none;
+    padding: 10px 25px;
+    background-color: rgba(128, 128, 128, .6);
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.anime h2{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    /* margin: 60px 0 20px 0; */
+    margin: 30px 0 20px 0;
+    font-size: 15px;
+}
+.divul ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px 0 0 30px;
+}
+.anime .divul{
+    position: absolute;
+    z-index: 2000;
+    left: 0;
+}
+.divul ul li{
+    margin-right: 20px;
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+.blurAnime{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+}
+.smotr{
+    display: flex;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, .6);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.smotrdiv{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+}
 
 @media (min-width: 500px){
     .new_reliz1{
@@ -116,7 +172,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .top№1_anime{
         background-image: url(../img/darling_in_the_franxx.jpg);
         margin: 20px 50px;
@@ -157,13 +213,37 @@
     .anime6:hover #anime66{
         display: block;
     }
-    .anime div{
+    .anime .blurAnime{
+        top: 0;
         display: none;
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
-        height: 100vh;
+        height: 400px;
         position: absolute;
         overflow-wrap: break-word;
+    }
+    .seria:hover{
+        background-color: rgba(128, 128, 128, .9);
+    }
+    .anime h2{
+        font-size: 21px;
+        margin: 60px 0 20px 0;
+    }
+    .divul ul li{
+        font-size: 15px;
+    }
+    .smotrdiv{
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+        z-index: 2;
+    }
+    .smotr{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    .smotr:hover{
+        background-color: rgba(128, 128, 128, .9);
     }
 }
 

@@ -88,6 +88,9 @@ header ul li{
 header ul a{
     text-decoration: none;
 }
+.liHeader{
+    color: red;
+}
 @media (min-width: 900px) {
     .nav_menu_phone{
         display: none;
@@ -110,6 +113,12 @@ header ul a{
     }
     header ul li:hover{
         background-color: rgb(18, 18, 18);
+    }
+    .liHoverHeader{
+        background-color: red;
+    }
+    .liHoverHeader:hover{
+        background-color: red;
     }
     .nav_menu{
         height: 90px;
